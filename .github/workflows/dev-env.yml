@@ -35,7 +35,7 @@ jobs:
       - name: deploy
         uses: deliverybot/helm@v1
         with:
-          helm: helm
+          helm: helm3
           release: bookinfo-dev-ratings
           namespace: student30-bookinfo-dev
           chart: k8s/helm
