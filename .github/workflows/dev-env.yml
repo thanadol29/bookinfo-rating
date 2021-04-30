@@ -46,6 +46,12 @@ jobs:
                 "COMMIT_SHA": "${{ github.sha }}"
               }
             }
+  acceptence:
+    needs: build
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Set env
+        run: curl http://bookinfo.dev.opsta.net/student30/ratings/health | grep "Ratings is working"
 
 
       # - run: docker build -t ghcr.io/thanadol29/bookinfo-ratings:dev .
