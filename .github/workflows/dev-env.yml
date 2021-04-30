@@ -39,7 +39,7 @@ jobs:
           release: bookinfo-dev-ratings
           namespace: student30-bookinfo-dev
           chart: k8s/helm
-          value-files: k8s/helm-values/values-bookinfo-dev-ratings-mongodb.yaml
+          value-files: k8s/helm-values/values-bookinfo-dev-ratings.yaml
 
 
       # - run: docker build -t ghcr.io/thanadol29/bookinfo-ratings:dev .
