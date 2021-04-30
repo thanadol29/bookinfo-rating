@@ -1,6 +1,6 @@
 ratings:
   namespace: student30-bookinfo-dev
-  image: ghcr.io/[GITHUB_USER]/bookinfo-ratings
+  image: ghcr.io/thanadol29/bookinfo-ratings
   tag: dev
   replicas: 1
   imagePullSecrets: registry-bookinfo
