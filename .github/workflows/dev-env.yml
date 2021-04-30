@@ -47,7 +47,7 @@ jobs:
               }
             }
   acceptence:
-    needs: build
+    needs: deploy
     runs-on: ubuntu-20.04
     steps:
       - name: Set env
